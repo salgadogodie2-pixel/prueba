@@ -1,17 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Mi primera WebApp en Azure</title>
-  <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; background: #f9f9f9; }
-    h1 { color: #0078d7; }
-    p { font-size: 18px; }
-    .highlight { font-weight: bold; color: #ff4500; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web con Botonera</title>
+    <style>
+        /* Estilos CSS */
+        body {
+            /* Fondo azul para toda la página */
+            background-color: #007bff; /* Azul vibrante */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centrar el contenido principal */
+        }
+
+        .header-container {
+            /* Contenedor para la botonera y la imagen */
+            width: 80%; /* Ancho del contenedor principal */
+            margin: 50px auto; /* Centrar el contenedor en la página */
+            background-color: white; /* Fondo blanco para el contenido */
+            padding: 20px;
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .navbar {
+            /* Estilos para la botonera/menú */
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px; /* Espacio debajo de la botonera */
+            display: flex; /* Para poner los botones en línea */
+            justify-content: center; /* Centrar los botones horizontalmente */
+            gap: 20px; /* Espacio entre los botones */
+        }
+
+        .navbar li {
+            display: inline;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #333; /* Color de texto predeterminado */
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-weight: bold;
+            display: block; /* Asegura que el padding funcione bien */
+        }
+
+        /* Estilo específico para el botón "Inicio" (Naranja) */
+        .navbar a.inicio {
+            background-color: #ff9900; /* Naranja */
+            color: white;
+            border-color: #ff9900;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+        }
+
+        .navbar a.inicio:hover {
+             /* Un tono de naranja ligeramente más oscuro al pasar el ratón */
+            background-color: #cc7a00;
+            color: white;
+        }
+
+        .logo-image {
+            /* Estilos para la imagen */
+            max-width: 100%; /* Ajusta el ancho para que no se salga del contenedor */
+            height: auto;
+            display: block; /* Elimina espacio extra debajo de la imagen */
+            margin: 0 auto; /* Centrar la imagen */
+            width: 300px; /* Tamaño específico para que se vea bien */
+        }
+
+        .message {
+            /* Estilos para el mensaje final */
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+            font-size: 1.5em;
+            color: #333;
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
-  <h1>🚀 Hola, soy [AQUÍ PON TU NOMBRE]</h1>
-  <p>Esta página fue desplegada en <span class="highlight">Azure App Service</span> usando GitHub 🎉</p>
-  <p>Personalízala y hazla tuya ✨</p>
+
+    <div class="header-container">
+        <ul class="navbar">
+            <li><a href="#" class="inicio">Inicio</a></li> <li><a href="#">Quiénes Somos</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+
+        <img src="https://itsi.edu.ec/web/wp-content/uploads/2023/10/Logo-PNG-oscuro.png" alt="Logo de ITSI" class="logo-image">
+
+        <p class="message">
+            Muchas gracias Dianita :D
+        </p>
+    </div>
+
 </body>
 </html>
